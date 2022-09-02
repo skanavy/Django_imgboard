@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('group/<slug:slug>/', views.index, name='thread')
+    path('thread/<thread_number>/', views.thread, name='thread')
 ]

@@ -8,10 +8,9 @@ class PostForm(forms.ModelForm):
 
     class Meta:
         model = Post
-        fields = ('title', 'text', 'image', 'thread')
+        fields = ('title', 'text', 'image')
         labels = {
             'title': _('Заголовок'),
             'text': _('Текст поста'),
             'image': _('Картинка'),
-            'thread': _('тред'),
         }

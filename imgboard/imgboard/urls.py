@@ -21,5 +21,5 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('post_list.urls')),
+    path('', include(('post_list.urls', 'post_list'), namespace='post_list')),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
